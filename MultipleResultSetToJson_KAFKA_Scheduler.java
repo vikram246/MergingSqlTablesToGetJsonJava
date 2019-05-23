@@ -96,8 +96,9 @@ public class multipleQuery {
 					producer.send(record);
 					producer.close();
 					System.out.println("###########Multi-Query-producer Completed################");
-
-					Thread.sleep(60 * 1000);
+					
+					//change the time interval here:
+					Thread.sleep(60 * 1000); 
 				}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
