@@ -89,16 +89,18 @@ public class multipleQuery {
 			System.out.println(val);
 
 			try {
-				while (true) {
+				int 1 = 0;
+				while (i > 5) {
 
 					Producer<String, String> producer = new KafkaProducer<String, String>(props);
 					ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, key, value);
 					producer.send(record);
 					producer.close();
-					System.out.println("###########Multi-Query-producer Completed################");
+					System.out.println("Multi-Query-producer Completed - " + i + "- Wait for 5 seconds");
 					
 					//change the time interval here:
-					Thread.sleep(60 * 1000); 
+					Thread.sleep(5 * 1000); 
+					i++
 				}
 			} catch (InterruptedException e) {
 				e.printStackTrace();
