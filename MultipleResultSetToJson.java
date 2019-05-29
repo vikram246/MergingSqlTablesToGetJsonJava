@@ -7,20 +7,7 @@ import java.sql.*;
 
 import org.json.JSONObject;
 import org.json.simple.JSONArray;
-
 import com.google.gson.JsonObject;
-
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-import javax.json.Json;
-import javax.json.JsonObjectBuilder;
 
 /**
  * @author Vikram
